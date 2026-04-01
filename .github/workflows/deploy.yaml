@@ -82,7 +82,7 @@ jobs:
               --name bloggapp-backend \
               --restart always \
               -p 5000:5000 \
-              -e MONGO_URI=${{ secrets.MONGO_URI }} \
+              -e MONGO_URI="${{ secrets.MONGO_URI }}" \
               ${{ secrets.ECR_REGISTRY }}/bloggapp-backend:latest
 
   # ─────────────────────────────────────────
