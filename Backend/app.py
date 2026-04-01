@@ -9,7 +9,7 @@ db = client["blogapp"]
 
 @app.route("/")
 def index():
-    return jsonify({"message": "Welcome to the Blog App API!"})
+    return jsonify({"message": "Welcome to the Blog App API you all!"})
  
  
 @app.route("/health", methods=["GET"])
